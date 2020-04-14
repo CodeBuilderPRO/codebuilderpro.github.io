@@ -1,0 +1,129 @@
+
+@import '_var.scss';
+
+
+
+@import '_nav.scss';
+
+
+
+
+
+.main{
+	margin: auto;
+
+	overflow: hidden;
+	width: 100%;
+	background-image: url(../img/2616641.jpg);
+	background-repeat: no-repeat;
+	background-size: 120%;
+	background-attachment: fixed;
+	background-position: -1px 0;
+
+
+
+
+	.reviews{
+		margin: auto;
+		width: 100%;
+		
+	}
+	.reviews_wrap{
+		overflow: hidden;
+		margin: 20px auto;
+		border-radius: 2px;
+		padding: 10px 5px;
+		width: 960px;
+		height: auto;
+		font-family: $main-font;
+		text-align: center;
+		background-color: #fff;
+		font-size: 16px;
+
+		
+
+
+		.reviews-title{
+			text-align: center;
+			font-family: 'Rubik Mono One', sans-serif;
+			font-size: 26px;
+		}
+	}
+}
+
+
+
+
+@import '_footer.scss';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MOBILE
+
+@media screen and (max-width: 700px){
+
+	.main{
+	margin: auto;
+
+	overflow: hidden;
+	width: 100%;
+	background-image: url(../img/2616641.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: -5px 0;
+
+
+
+
+	.reviews{
+		margin: auto;
+		width: 100%;
+		
+	}
+	.reviews_wrap{
+		overflow: hidden;
+		margin: 100px auto 40px;
+		border-radius: 2px;
+		padding: 10px 5px;
+		width: 100%;
+		height: auto;
+		font-family: $main-font;
+		text-align: center;
+		background-color: #fff;
+		font-size: 16px;
+
+		
+
+
+		.reviews-title{
+			text-align: center;
+			font-family: 'Rubik Mono One', sans-serif;
+			font-size: 26px;
+		}
+	}
+}
+
+	
+}
+
+// MOBILE

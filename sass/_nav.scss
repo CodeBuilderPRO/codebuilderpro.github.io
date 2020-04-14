@@ -1,0 +1,167 @@
+.nav_wrap{
+	margin: auto;
+	width: 100%;
+	// border-bottom: 1px solid #d2d2d2;
+	font-family: $main-font;
+	font-family: 'Russo One', sans-serif;
+	font-family: 'Prosto One', cursive;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	background-color: #163b66;
+
+	.nav_inner{
+		margin: auto;
+		width: 960px;
+		// border: 1px solid #000;
+
+		.nav_logo-img{
+			width: 70px;
+		}
+		.navbar{
+			margin: auto;
+			font-size: 16px;
+			font-weight: 500;
+			background-color: #163b66 !important;
+			// border: 1px solid #fff;
+			
+		}
+		.navbar-nav{
+			margin: auto;
+			// border: 1px solid #d2d2d2;
+
+			.mobile_link{
+				display: none;
+			}
+		}
+		.navbar-brand{
+			// margin-left: -100px;
+			font-family: 'Rubik Mono One', sans-serif;
+		}
+		.nav-link{
+			color: #fff;
+			transition: all .2s;
+			overflow: hidden;
+			margin: 5px;
+			text-align: center;
+			// border: 1px solid red;
+			position: relative;
+
+			&::after{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				width: 0%;
+				// margin-left: -900px;
+				height: 1px;
+				// border-bottom: 1px solid #000;
+				border: 0;
+				height: 1px;
+				background: #fff;
+				background-image: -webkit-linear-gradient(left, #163b66, #fff, #163b66);
+				background-image: -moz-linear-gradient(left, #163b66, #fff, #163b66);
+				background-image: -ms-linear-gradient(left, #163b66, #fff, #163b66);
+				background-image: -o-linear-gradient(left, #163b66, #fff, #163b66);
+				transition: all .2s;
+				
+			}
+
+			&:hover{
+				color: #fff;
+			}
+			&:hover:after{
+				width: 100%;
+		
+			}
+		}
+		.special-link{
+			color: #FFFF33;
+			background-color: #121212;
+			margin: 0 1px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+	// NAV
+	.nav_wrap{
+		margin: auto;
+		width: 100%;
+		font-family: $main-font;
+		overflow: hidden;
+
+		.nav_inner{
+			margin: auto;
+			width: 100%;
+
+			.nav_logo-img{
+				width: 40px;
+			}
+			.navbar{
+				margin: auto;
+				background-color: #fff !important;
+				position: fixed;
+				width: 100%;
+				top: 0;
+				padding: 0;
+				z-index: 2;
+				box-shadow: 0 0 10px #000;
+
+				// height: 50px;
+			}
+			.navbar-nav{
+				border-top: 1px solid #000;
+				margin: auto;
+				background-color: #fff;
+				width: 100% !important;
+				text-align: center;
+
+				.mobile_link{
+					display: block;
+				}
+			}
+			.navbar-brand{
+				margin-left: 10px;
+				font-family: 'Rubik Mono One', sans-serif;
+			}
+			.nav-link{
+				color: #000;
+				transition: all .2s;
+
+				&:hover{
+					color: #FFFF33;
+					background-color: #121212;
+				}
+			}
+			.special-link{
+				color: #FFFF33;
+				background-color: #121212;
+				margin: 0;
+			}
+			.navbar-toggler{
+				margin-right: 10px;
+				border: 1px solid #000;
+			}
+
+
+		}
+	}
+	// NAV
+}
